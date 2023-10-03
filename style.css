@@ -256,7 +256,7 @@
 }
 
 .custom-bullet-list li {
-    background-image: url('bikerblack.png');
+    background-image: url('bikerblack');
     /* Replace with the path to your custom bullet image */
     background-repeat: no-repeat;
     background-size: 24px 25px;
