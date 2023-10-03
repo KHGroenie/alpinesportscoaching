@@ -256,7 +256,7 @@
 }
 
 .custom-bullet-list li {
-    background-image: url('/Users/KHEngineering/Desktop/animated landing page/bikerblack.png');
+    background-image: url('bikerblack.png');
     /* Replace with the path to your custom bullet image */
     background-repeat: no-repeat;
     background-size: 24px 25px;
@@ -275,7 +275,7 @@
 }
 
 .custom-bullet-list-first li {
-    background-image: url('/Users/KHEngineering/Desktop/animated landing page/bikerblack.png');
+    background-image: url('bikerblack.png');
     /* Replace with the path to your custom bullet image */
     background-repeat: no-repeat;
     background-size: 24px 25px;
