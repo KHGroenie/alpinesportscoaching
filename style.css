@@ -50,14 +50,7 @@
     /* Default padding for normal screens */
 }
 
-/* Media query for smaller screens (adjust the max-width as needed) */
-@media (max-width: 768px) {
-    .custom-signup-button {
-        font-size: 12px !important;
-        /* Adjust the font size for smaller screens */
-        padding: 8px 16px !important;
-        /* Adjust the padding for smaller screens */
-    }
+
 }
 /* Styles for the first section 'gallery' */
 #gallery {
