@@ -1,16 +1,13 @@
-.navbar-logo {
-    max-height: 80px;
-    /* Set the max height for your logo */
-    margin-left: 60px;
-}
-/* Adjusted logo size for smaller screens */
-@media (max-width: 768px) {
-    .navbar-logo {
+
+
+
+ /* Adjusted logo size for smaller screens */
+    @media (max-width: 768px) {
+      .navbar-logo {
         width: 24px;
         height: 25px;
+      }
     }
-}
-
 /* Style for the transparent navigation bar */
 .navbar {
     background-color: transparent;
@@ -19,8 +16,10 @@
 /* Media query for adjusting the navigation layout for smaller screens */
 @media (max-width: 768px) {
     .nav-list {
-        flex-direction: row;
+        display: flex;
+        flex-direction: row; /* Ensure items are in a row */
         justify-content: center;
+        align-items: center;
     }
 
     .nav-list li {
@@ -28,11 +27,18 @@
     }
 
     .nav-list a {
-        font-size: 10px;
-        /* Adjust the font size for smaller screens */
+        font-size: 10px; /* Adjust the font size for smaller screens */
+        white-space: nowrap; /* Prevent text from wrapping */
+        margin-right: 10px; /* Add spacing between items */
     }
 }
-
+/* Media query for displaying one card per row on smaller screens */
+@media (max-width: 768px) {
+    .w-full.md\:w-5\/12 {
+        width: 100%;
+        /* Set the width to 100% for smaller screens */
+    }
+}
 /* Add styles for the image container */
 .image-container {
     display: flex;
@@ -41,7 +47,7 @@
     margin: 10px;
     cursor: pointer;
     /* Optional: Add a pointer cursor to indicate interactivity */
-}
+}/* Styles for the first section 'gallery' */
 /* Style for the Sign-Up Button */
 .custom-signup-button {
     font-size: 16px;
@@ -51,15 +57,22 @@
 }
 
 
+
+
+/* Media query for displaying one card per row on smaller screens */
+@media (max-width: 768px) {
+    .w-full.md\:w-5\/12 {
+        width: 100%;
+        /* Set the width to 100% for smaller screens */
+    }
 }
-/* Styles for the first section 'gallery' */
 #gallery {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: flex-start;
     /* Change to 'flex-start' to center the images vertically */
-    gap: 0px;
+    
     /* Add some spacing between images */
 }
 
@@ -188,7 +201,23 @@
 .pricing-container {
     position: relative;
     margin: 0 20px;
-    /* Adjust margin as needed */
+    /* Adjust margin as needed for normal layout */
+}
+
+/* Style for Images */
+.pricing-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Add a small gap between pricing containers on smaller screens */
+@media (max-width: 768px) {
+    .pricing-container {
+        margin: 0 10px;
+        /* Adjust the margin to create a smaller gap */
+        width: calc(50% - 20px);
+        /* Display 2 containers per row on smaller screens */
+    }
 }
 
 /* Style for Images */
@@ -232,7 +261,13 @@
 .pricing-container:hover .pricing-text {
     opacity: 1;
 }
-
+/* Add a gap between images on smaller screens */
+@media (max-width: 768px) {
+    .pricing-container {
+        margin: 0 10px;
+        /* Adjust the margin to create a smaller gap */
+    }
+}
 .whatsapp-widget {
     position: fixed;
     bottom: 20px;
@@ -310,7 +345,7 @@
 }
 
 .custom-bullet-list li {
-    background-image: url('bikerblack.png');
+    background-image: url('/Users/KHEngineering/Desktop/animated landing page/bikerblack.png');
     /* Replace with the path to your custom bullet image */
     background-repeat: no-repeat;
     background-size: 24px 25px;
@@ -329,7 +364,7 @@
 }
 
 .custom-bullet-list-first li {
-    background-image: url('bikerblack.png');
+    background-image: url('/Users/KHEngineering/Desktop/animated landing page/bikerblack.png');
     /* Replace with the path to your custom bullet image */
     background-repeat: no-repeat;
     background-size: 24px 25px;
