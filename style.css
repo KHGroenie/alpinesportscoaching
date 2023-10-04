@@ -3,6 +3,35 @@
     /* Set the max height for your logo */
     margin-left: 60px;
 }
+/* Adjusted logo size for smaller screens */
+@media (max-width: 768px) {
+    .navbar-logo {
+        width: 24px;
+        height: 25px;
+    }
+}
+
+/* Style for the transparent navigation bar */
+.navbar {
+    background-color: transparent;
+}
+
+/* Media query for adjusting the navigation layout for smaller screens */
+@media (max-width: 768px) {
+    .nav-list {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .nav-list li {
+        margin-right: 10px;
+    }
+
+    .nav-list a {
+        font-size: 10px;
+        /* Adjust the font size for smaller screens */
+    }
+}
 
 /* Add styles for the image container */
 .image-container {
