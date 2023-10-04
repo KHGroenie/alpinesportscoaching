@@ -1,23 +1,14 @@
-
-
-
- /* Adjusted logo size for smaller screens */
-    @media (max-width: 768px) {
-      .navbar-logo {
+/* Base styles for larger screens */
+/* Adjusted logo size for smaller screens */
+@media (max-width: 768px) {
+    .navbar-logo {
         width: 24px;
         height: 25px;
-      }
     }
-/* Style for the transparent navigation bar */
-.navbar {
-    background-color: transparent;
-}
 
-/* Media query for adjusting the navigation layout for smaller screens */
-@media (max-width: 768px) {
     .nav-list {
         display: flex;
-        flex-direction: row; /* Ensure items are in a row */
+        flex-direction: row;
         justify-content: center;
         align-items: center;
     }
@@ -27,53 +18,43 @@
     }
 
     .nav-list a {
-        font-size: 10px; /* Adjust the font size for smaller screens */
-        white-space: nowrap; /* Prevent text from wrapping */
-        margin-right: 10px; /* Add spacing between items */
+        font-size: 10px;
+        white-space: nowrap;
+        margin-right: 10px;
     }
-}
-/* Media query for displaying one card per row on smaller screens */
-@media (max-width: 768px) {
+
     .w-full.md\:w-5\/12 {
         width: 100%;
-        /* Set the width to 100% for smaller screens */
     }
-}
-/* Add styles for the image container */
-.image-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 10px;
-    cursor: pointer;
-    /* Optional: Add a pointer cursor to indicate interactivity */
-}/* Styles for the first section 'gallery' */
-/* Style for the Sign-Up Button */
-.custom-signup-button {
-    font-size: 16px;
-    /* Default font size for normal screens */
-    padding: 12px 24px;
-    /* Default padding for normal screens */
-}
 
+    .custom-heading,
+    .custom-paragraph {
+        font-size: 0.5rem;
+        margin-left: 10px;
+    }
 
-
-
-/* Media query for displaying one card per row on smaller screens */
+    .custom-text-container {
+        text-align: center;
+    }
+}/* Media query to hide the h1 on smaller screens */
 @media (max-width: 768px) {
-    .w-full.md\:w-5\/12 {
-        width: 100%;
-        /* Set the width to 100% for smaller screens */
+    .custom-paragraph {
+        display: none;
     }
 }
+
+/* Style for the transparent navigation bar */
+.navbar {
+    background-color: transparent;
+}
+
+/* Styles for the first section 'gallery' */
 #gallery {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: flex-start;
     /* Change to 'flex-start' to center the images vertically */
-    
-    /* Add some spacing between images */
 }
 
 #gallery .image-container {
@@ -111,7 +92,6 @@
     }
 }
 
-
 /* Style for the image containers */
 .image-container {
     position: relative;
@@ -121,9 +101,6 @@
     cursor: pointer;
     border-radius: 0.5rem;
     margin: 5px;
-    /* Adjust the margin for spacing between images */
-    flex: 0 0 calc(33.33% - 10px);
-    /* Adjust the width for 3 images per row with spacing */
 }
 
 /* Style for the images */
@@ -135,16 +112,11 @@
     border-radius: 0.5rem;
 }
 
-
-
-
 /* Hide the image on hover */
 .image-container:hover .image {
     transform: scale(0.9);
 }
-.image-container:hover .image-text {
-    opacity: 1;
-}
+
 /* Style for the testimonial grid container */
 .testimonial-grid {
     display: flex;
@@ -160,7 +132,6 @@
     flex: 1;
     flex-wrap: wrap;
     gap: 5px;
-    /* Reduce the gap to your desired spacing */
 }
 
 /* Style for each testimonial image container */
@@ -178,39 +149,16 @@
     object-fit: cover;
 }
 
-/* Add margin to create spacing */
-.testimonial-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 5px;
-}
-
-/* Add a higher z-index value */
-.testimonial-image-container {
-    position: relative;
-    z-index: 1500;
-}
-
 /* Apply padding to the bottom of the last two testimonials */
 .testimonial-image-container:nth-last-child(-n+2) {
     padding-bottom: 0px;
-    /* Adjust the padding value as needed */
 }
 
 /* Style for Pricing Containers */
 .pricing-container {
     position: relative;
     margin: 0 20px;
-    /* Adjust margin as needed for normal layout */
 }
-
-/* Style for Images */
-.pricing-container img {
-    max-width: 100%;
-    height: auto;
-}
-
-
 
 /* Style for Images */
 .pricing-container img {
@@ -229,7 +177,6 @@
     color: #fff;
     text-align: center;
     opacity: 0;
-    /* Hide initially */
     transition: opacity 0.3s ease;
 }
 
@@ -253,13 +200,15 @@
 .pricing-container:hover .pricing-text {
     opacity: 1;
 }
+
 /* Add a gap between images on smaller screens */
 @media (max-width: 768px) {
     .pricing-container {
         margin: 0 10px;
-        /* Adjust the margin to create a smaller gap */
     }
 }
+
+/* WhatsApp Widget */
 .whatsapp-widget {
     position: fixed;
     bottom: 20px;
@@ -280,10 +229,10 @@
 .whatsapp-widget a i {
     font-size: 24px;
 }
+
 /* CSS for the social media icons */
 .social-icons {
     margin-top: 20px;
-    /* Adjust as needed */
 }
 
 .social-icon-btn {
@@ -297,11 +246,8 @@
     background-color: white;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
     margin-right: 10px;
-    /* Adjust spacing between buttons */
     text-decoration: none;
-    /* Remove underline from links */
     color: #007bff;
-    /* Change this to your desired icon color */
 }
 
 .social-icon-btn i {
@@ -311,96 +257,50 @@
 /* CSS for the video container */
 .video-container {
     clear: both;
-    /* Clear the float to move below the social icons */
     margin-top: 20px;
-    /* Add margin for spacing */
 }
 
 .video-container iframe {
     width: 100%;
     height: auto;
     border-radius: 0.5rem;
-    /* Auto-adjust the height based on the width */
 }
 
 /* CSS for the text content */
 .text-content {
     padding-bottom: 10px;
-    /* Adjust text content styling as needed */
 }
+
 /* Style for custom bullet list */
 .custom-bullet-list {
     list-style-type: none;
-    /* Remove default list bullets */
     padding-left: 0;
-    /* Remove default left padding */
 }
 
 .custom-bullet-list li {
     background-image: url('/Users/KHEngineering/Desktop/animated landing page/bikerblack.png');
-    /* Replace with the path to your custom bullet image */
     background-repeat: no-repeat;
     background-size: 24px 25px;
-    /* Set the dimensions of your custom image */
     padding-left: 40px;
-    /* Adjust the space between the bullet and text */
     margin-bottom: 20px;
-    /* Adjust the space between list items */
 }
+
 /* Style for the first custom bullet list */
 .custom-bullet-list-first {
     list-style-type: none;
-    /* Remove default list bullets */
     padding-left: 0;
-    /* Remove default left padding */
 }
 
 .custom-bullet-list-first li {
     background-image: url('/Users/KHEngineering/Desktop/animated landing page/bikerblack.png');
-    /* Replace with the path to your custom bullet image */
     background-repeat: no-repeat;
     background-size: 24px 25px;
-    /* Set the dimensions of your custom image */
     background-position: left center;
-    /* Adjust the position to the left */
     padding-left: 40px;
-    /* Adjust the space between the bullet and text */
     margin-bottom: 20px;
-    /* Adjust the space between list items */
 }
 
-
-
- Add more base styles here */
- /* Media query for screens smaller than 768px */
- @media (max-width: 768px) {
-     .navbar-logo {
-         max-height: 60px;
-         /* Adjust for smaller screens */
-         margin-left: 20px;
-         /* Adjust for smaller screens */
-     }
-
-     .image-container {
-         margin: 5px;
-         /* Adjust for smaller screens */
-     }
-
-     /* Add styles for smaller screens here */
- }
-
- /* Media query for screens smaller than 576px */
- @media (max-width: 576px) {
-     .navbar-logo {
-         max-height: 40px;
-         /* Adjust for even smaller screens */
-         margin-left: 10px;
-         /* Adjust for even smaller screens */
-     }
-
-     /* Add styles for even smaller screens here */
- }
-
+/* Add more base styles here */
 .relative {
     position: relative;
 }
