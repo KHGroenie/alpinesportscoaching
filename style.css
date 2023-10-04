@@ -210,15 +210,7 @@
     height: auto;
 }
 
-/* Add a small gap between pricing containers on smaller screens */
-@media (max-width: 768px) {
-    .pricing-container {
-        margin: 0 10px;
-        /* Adjust the margin to create a smaller gap */
-        width: calc(50% - 20px);
-        /* Display 2 containers per row on smaller screens */
-    }
-}
+
 
 /* Style for Images */
 .pricing-container img {
