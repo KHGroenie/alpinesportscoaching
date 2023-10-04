@@ -8,39 +8,29 @@
   <title>Alpine Sports Coaching</title>
   <link rel="stylesheet" type="text/css" href="style.css">
 
-  <link rel="icon" type="image/png" href="alpinelogo.png">
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
-  <!-- AOS CSS -->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <!-- Tailwind Library -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/creativetimofficial/tailwind-starter-kit/compiled-tailwind.min.css" />
-  
-  <style>
-    /* Custom styles for navigation */
-    .navbar {
-      background-color: #0000; /* Change the background color as needed */
-    }
-    
-    .navbar-logo {
-      max-width: 100%; /* Prevent logo squishing */
-    }
-
-    /* Custom styles for mobile view */
-    @media (max-width: 768px) {
-      .navbar {
-        position: static;
-      }
-    }
-  </style>
+    <link rel="icon" type="img/png" href="alpinelogo.png">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="alpinelogo.png">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Tailwind Library -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/creativetimofficial/tailwind-starter-kit/compiled-tailwind.min.css" />
 </head>
+<div class="whatsapp-widget">
+  <a href="https://api.whatsapp.com/send?phone=27826155111" target="_blank" rel="noopener noreferrer">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+</div>
+
 <body class="text-gray-800 antialiased">
 
   <!-- Navigation -->
-  <nav class="navbar top-0 w-full flex items-center justify-between px-2 py-3 navbar-expand-lg">
-    <div class="container px-4 mx-auto flex items-center justify-between">
+  <nav class="top-0 absolute z-50 w-full flex flex-wrap items-center justify-between px-2 py-3 navbar-expand-lg">
+    <div class="container px-4 mx-auto flex flex-wrap items-center justify-between">
       <!-- Nav Left Side (Logo) -->
-      <div class="w-full lg:w-auto lg:static lg:block lg:justify-start">
+      <div class="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
         <a class="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-no-wrap uppercase text-white"
           href="https://www.alpinesportscoaching.com">
           <!-- Nav Title -->
@@ -58,14 +48,16 @@
             About Online Training
           </a>
         </li>
-        <!-- Header - Contact -->
+        <!-- Header - Plans -->
         <li class="flex items-center">
           <a class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
-            href="#contact">
+            href="#Contact">
             Contact
           </a>
+          
+          </a>
         </li>
-        <!-- Header - Plans -->
+        <!-- Header - Get Started -->
         <li class="flex items-center">
           <a class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
             href="#pricing-section">
@@ -73,6 +65,7 @@
           </a>
         </li>
       </ul>
+    </div>
     </div>
   </nav>
   <!-- End of Navigation -->
