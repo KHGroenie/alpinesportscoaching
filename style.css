@@ -13,6 +13,23 @@
     cursor: pointer;
     /* Optional: Add a pointer cursor to indicate interactivity */
 }
+/* Style for the Sign-Up Button */
+.custom-signup-button {
+    font-size: 16px;
+    /* Default font size for normal screens */
+    padding: 12px 24px;
+    /* Default padding for normal screens */
+}
+
+/* Media query for smaller screens (adjust the max-width as needed) */
+@media (max-width: 768px) {
+    .custom-signup-button {
+        font-size: 12px !important;
+        /* Adjust the font size for smaller screens */
+        padding: 8px 16px !important;
+        /* Adjust the padding for smaller screens */
+    }
+}
 /* Styles for the first section 'gallery' */
 #gallery {
     display: flex;
