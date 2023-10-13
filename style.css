@@ -117,7 +117,6 @@
     display: flex;
     flex-wrap: wrap;
     gap: 5px;
-    z-index: 2;
 }
 
 /* Style for each testimonial row */
@@ -134,7 +133,6 @@
     position: relative;
     overflow: hidden;
     cursor: pointer;
-    z-index: 9;
     transition: transform 0.3s ease;
 }
 
@@ -143,7 +141,6 @@
     max-width: 100%;
     height: auto;
     object-fit: cover;
-    z-index: 9;
 }
 
 /* Apply padding to the bottom of the last two testimonials */
