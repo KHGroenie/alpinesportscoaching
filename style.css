@@ -42,14 +42,14 @@
 .navbar {
     background-color: transparent;
 }
-
 /* Styles for the first section 'gallery' */
 #gallery {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: flex-start;
-    /* Change to 'flex-start' to center the images vertically */
+    align-items: center;
+    margin: 0 auto;
+    /* Center the gallery container horizontally */
 }
 
 #gallery .image-container {
@@ -71,7 +71,6 @@
 #gallery .image-container:hover img {
     transform: scale(0.9);
 }
-
 /* Responsive Styles for Smaller Screens */
 @media (max-width: 768px) {
     #gallery .image-container {
